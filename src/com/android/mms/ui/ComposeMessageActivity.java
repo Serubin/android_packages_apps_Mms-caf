@@ -1906,9 +1906,12 @@ public class ComposeMessageActivity extends Activity
                 "color", mAccentColor, accentColor);
         final ObjectAnimator statusBarAnimation = ObjectAnimator.ofInt(getWindow(),
                 "statusBarColor", mStatusBarColor, statusBarColor);
+        final ObjectAnimator navigationBarAnimation = ObjectAnimator.ofInt(getWindow(),
+                "navigationBarColor", mAccentColor, accentColor);
 
         backgroundAnimation.setEvaluator(new ArgbEvaluator());
         statusBarAnimation.setEvaluator(new ArgbEvaluator());
+        navigationBarAnimation.setEvaluator(new ArgbEvaluator());
         findViewById(R.id.header).setBackground(background);
 
         final AnimatorSet animation = new AnimatorSet();

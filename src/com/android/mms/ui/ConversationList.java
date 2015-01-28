@@ -63,6 +63,7 @@ import android.view.View;
 import android.view.View.OnCreateContextMenuListener;
 import android.view.View.OnKeyListener;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.CheckBox;
 import android.widget.ImageView;
@@ -249,6 +250,7 @@ public class ConversationList extends ListActivity implements DraftCache.OnDraft
 
         View actionButton = findViewById(R.id.floating_action_button);
         actionButton.setOnClickListener(mComposeClickHandler);
+        getWindow().setNavigationBarColor(getWindow().getStatusBarColor());
     }
 
     @Override

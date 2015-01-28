@@ -43,7 +43,6 @@
             android:dividerHeight="0dp"
             android:drawSelectorOnTop="false"
             android:scrollbarStyle="insideOverlay"
-            android:background="@android:color/white"
             android:fadingEdgeLength="16dip" />
 
         <TextView android:id="@+id/empty"
@@ -51,7 +50,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:background="@android:color/white"
+            android:background="#303030"
             android:text="@string/loading_conversations"
             android:textAppearance="?android:attr/textAppearanceMedium" />
     </LinearLayout>

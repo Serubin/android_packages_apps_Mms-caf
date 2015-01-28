@@ -166,11 +166,10 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="gone"
-                android:background="#fff" >
+                android:visibility="gone" >
 
                 <EditText
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:id="@+id/embedded_text_editor"
                     android:layout_width="0dip"
                     android:layout_gravity="bottom"
@@ -212,7 +211,7 @@
                     <TextView
                         android:id="@+id/send_button_mms"
                         style="?android:attr/borderlessButtonStyle"
-                        android:drawableBottom="@drawable/send_button_selector"
+                        android:drawableBottom="@drawable/send_button_selector_dark"
                         android:drawablePadding="0dip"
                         android:layout_width="wrap_content"
                         android:textSize="11sp"
@@ -228,7 +227,7 @@
                     <ImageButton
                         android:id="@+id/send_button_sms"
                         style="?android:attr/borderlessButtonStyle"
-                        android:src="@drawable/send_button_selector"
+                        android:src="@drawable/send_button_selector_dark"
                         android:drawablePadding="0dip"
                         android:layout_width="wrap_content"
                         android:layout_height="0dip"
