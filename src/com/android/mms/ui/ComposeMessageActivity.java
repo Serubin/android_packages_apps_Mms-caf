@@ -1915,7 +1915,7 @@ public class ComposeMessageActivity extends Activity
         findViewById(R.id.header).setBackground(background);
 
         final AnimatorSet animation = new AnimatorSet();
-        animation.playTogether(backgroundAnimation, statusBarAnimation);
+        animation.playTogether(backgroundAnimation, statusBarAnimation, navigationBarAnimation);
         animation.setDuration(isResumed() ? 200 : 0);
         animation.start();
 
